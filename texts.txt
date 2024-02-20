@@ -1,0 +1,13 @@
+cat
+dog
+lion
+tiger
+cat
+dog food
+rabbit
+black cats
+rabbit
+white dogs
+# BEGIN ANSIBLE MANAGED BLOCK
+192.168.0.200 demo demo.exampleTT.com
+# END ANSIBLE MANAGED BLOCK
