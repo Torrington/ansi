@@ -13,3 +13,4 @@ white dogs
 # END ANSIBLE MANAGED BLOCK
 rain deer
 sea lion
+cat
