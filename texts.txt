@@ -12,3 +12,4 @@ white dogs
 192.168.0.200 demo demo.exampleTT.com
 # END ANSIBLE MANAGED BLOCK
 rain deer
+sea lion
