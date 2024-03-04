@@ -1,0 +1,8 @@
+---
+- name: my ping 
+  hosts: localhost
+  become: false
+
+  tasks:
+      - name: my test
+        ping:

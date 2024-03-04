@@ -1,0 +1,12 @@
+---
+- name: my shell module
+  hosts: localhost
+  become: true
+  tasks: 
+    - name: list files
+      ansible.builtin.shell: 'ls -lrth *'
+      register: my_out
+
+    - name: my shell output
+      ansible.builtin.debug: 
+          var: my_out.stdout_lines

@@ -1,0 +1,9 @@
+- name: my line in file
+  hosts: localhost
+  tasks: 
+    - name: edit line of a file
+      ansible.builtin.lineinfile:
+        state: present
+        dest: /home/admintt/ansible/texts.txt
+        regexp: "^dog"
+        line: "dog food"

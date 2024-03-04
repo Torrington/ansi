@@ -1,0 +1,9 @@
+- name: my debug
+  hosts: localhost
+  vars:
+    fruit: "apple"
+
+  tasks: 
+    - name: my debug msg
+      ansible.builtin.debug:
+        msg: " my favourite fruit is {{ fruit }} "

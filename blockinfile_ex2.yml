@@ -1,0 +1,10 @@
+---
+- name: my blockfile module
+  hosts: localhost
+  tasks:
+    - name: Generate text in a file
+      ansible.builtin.blockinfile:
+        state: present
+        dest: /home/admintt/ansible/texts.txt
+        content: |
+          192.168.0.200 demo demo.exampleTT.com
