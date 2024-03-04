@@ -1,0 +1,11 @@
+---
+- name: my command module
+  hosts: localhost
+  tasks: 
+    - name: checking the uptime
+      ansible.builtin.command: uptime
+      register: my_out
+
+    - name: my command output
+      ansible.builtin.debug: 
+          var: my_out.stdout_lines

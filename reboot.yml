@@ -1,0 +1,12 @@
+---
+- name: my reboot
+  hosts: localhost
+  become: true
+
+  tasks:
+    - name: pc1 reboot
+      ansible.builtin.reboot:
+        msg: "rebooting by Ansible"
+        pre_reboot_delay: 5
+        post_reboot_delay: 10
+        test_command: "whoami"
